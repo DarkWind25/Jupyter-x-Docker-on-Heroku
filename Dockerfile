@@ -1,4 +1,4 @@
-FROM python:3.10.2.final.0-64
+FROM python:3.10.2
 
 ENV APP_HOME /app
 WORKDIR ${APP_HOME}
