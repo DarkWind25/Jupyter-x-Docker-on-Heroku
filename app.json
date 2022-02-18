@@ -1,7 +1,7 @@
 {
   "name": "Jupyter-Notebook-Server-Heroku",
   "description": "A jupyter notebook server via HEROKU web",
-  "logo": "https://raw.githubusercontent.com/developeranaz/Jupyter-Notebook-Server-Heroku/main/logo/Jupyter_logo.svg.png",
+  "logo": "https://raw.githubusercontent.com/DarkWind25/Jupyter-x-Docker-on-Heroku/master/Jupyter_logo.png",
   "keywords": ["jupyter", "notebook", "heroku", "web", "herokuweb", "jupyternotebook", "oneclickdeploy", "deploy-to-heroku", "docker"],
 
   "website": "",
