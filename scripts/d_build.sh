@@ -1,1 +1,1 @@
-docker build -t cfe-jupyter -f Dockerfile .
+docker build -t darkjupyter -f Dockerfile .

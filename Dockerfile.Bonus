@@ -1,4 +1,4 @@
-FROM python:3.8.2-slim
+FROM python:3.10.2.final.0-64
 
 ENV APP_HOME /app
 WORKDIR ${APP_HOME}
@@ -43,6 +43,9 @@ RUN pip install torch==1.5.0+cpu torchvision==0.6.0+cpu -f https://download.pyto
 
 # fastai
 RUN pip install fastai
+
+# webscrap
+RUN pip install beautifulsoup4 html5lib
 
 # Project installs
 RUN pipenv install --skip-lock --system --dev
