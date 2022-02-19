@@ -1,4 +1,5 @@
 import os
+import IPython.lib
 
 c = get_config()
 
@@ -7,13 +8,17 @@ c.IPKernelApp.pylab = 'inline'  # if you want plotting support always in your no
 
 # Notebook config
 c.NotebookApp.notebook_dir = 'nbs'
-c.NotebookApp.allow_origin = u'darkjupyter.herokuapp.com' # put your public IP Address here
+url = (os.environ['JUPYTER_APP_NAME']) + '.herokuapp.com'
+c.NotebookApp.allow_origin = url
+#c.NotebookApp.allow_origin = '' # put your public IP Address here
 c.NotebookApp.ip = '*'
 c.NotebookApp.allow_remote_access = True
 c.NotebookApp.open_browser = False
 
 # ipython -c "from notebook.auth import passwd; passwd()"
-c.NotebookApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$Te8LNpPJcXoE/19UsGBLAQ$Sdv0deY7WZWlofzot7xSRSvTbjUh7UD0O/YIP1c/IGk'
+passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
+c.NotebookApp.password = IPython.lib.passwd(passwd)
+#c.NotebookApp.password = ''
 c.NotebookApp.port = int(os.environ.get("PORT", 8888))
 c.NotebookApp.allow_root = True
 c.NotebookApp.allow_password_change = True

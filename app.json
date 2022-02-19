@@ -7,4 +7,13 @@
   "website": "",
   "repository": "",
   "stack": "container"
+
+  "env": {
+    "JUPYTER_NOTEBOOK_PASSWORD": {
+      "description": "IMPORTANT! Set a secure password."
+    },
+    "JUPYTER_APP_NAME": {
+      "description": "Add your App Name Same as Above."
+    }
+   }
  }
