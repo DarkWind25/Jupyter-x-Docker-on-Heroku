@@ -1,0 +1,15 @@
+## Automatic Installation
+Jupyter will not start, if the environment variable `JUPYTER_NOTEBOOK_PASSWORD` & `JUPYTER_APP_NAME` was not set.
+
+If you want to customize your app, easiest is to fork this repository.
+
+To install additional python packages edit Dockerfile.
+
+### One Click Deployment
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/DarkWind25/Jupyter-x-Docker-on-Heroku)
+
+
+If you don't have Docker on your system and you want deploy the app you can use this repository.
+First fork this repository.Add your additional packages or python packages by editing Dockerfile.
+Then push your edited code on github.
+Just remember that to deploy your repository on heroku you have change above line(line 9) which contain Deploy button.You just have to replace `https://github.com/DarkWind25/Jupyter-x-Docker-on-Heroku` to your repository address.

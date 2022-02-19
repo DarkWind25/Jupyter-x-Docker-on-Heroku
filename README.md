@@ -4,15 +4,6 @@
 
 Jupyter is a tool for running interactive notebooks; basically add Python with Markdown and you've got Jupyter. if you haven't used it before, I recommend you do. 
 
-## Automatic Installation
-Jupyter will not start, if the environment variable `JUPYTER_NOTEBOOK_PASSWORD` & `JUPYTER_APP_NAME`
-was not set.
-
-If you want to customize your app, easiest is to fork this repository.
-
-### One Click Deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/DarkWind25/Jupyter-x-Docker-on-Heroku)
-
 
 In this post, I'm going to show you how to deploy a Jupyter Notebook server on Heroku using Docker. 
 
