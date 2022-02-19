@@ -6,7 +6,7 @@
 
   "website": "",
   "repository": "",
-  "stack": "container"
+  "stack": "container",
 
   "env": {
     "JUPYTER_NOTEBOOK_PASSWORD": {
