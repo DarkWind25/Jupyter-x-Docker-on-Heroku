@@ -6,7 +6,7 @@ WORKDIR ${APP_HOME}
 COPY . ./
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y gcc wget 
+RUN apt-get install -y wget 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN pip install pip pipenv --upgrade
@@ -17,7 +17,7 @@ RUN pipenv install --skip-lock --system --dev
 RUN pip install beautifulsoup4 html5lib
 
 # Extras pip packages
-RUN pip install numba pillow scikit-image numpy pandas fastai matplotlib keras
+RUN pip install numba pillow scikit-image pandas matplotlib keras
 RUN pip cache purge
 
 CMD ["./scripts/entrypoint.sh"]
